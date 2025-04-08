@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imágenes biñeta</title>
+  <style>
+    .contenedor {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="contenedor">
+    <img src="N1.png" alt="Imagen N1">
+    <img src="N2.png" alt="Imagen N2">
+    <img src="N3.png" alt="Imagen N3">
+  </div>
+</body>
+</html>
