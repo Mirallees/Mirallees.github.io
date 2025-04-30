@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Menú de Café</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('fondo.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100vh;
+      width: 100vw;
+      color: rgb(0, 0, 0);
+      font-family: Arial, sans-serif; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .menu {
+      background-color: #f4b475;
+      padding: 15px 30px;
+      text-align: center;
+      width: 600px;
+      height: 820px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      box-sizing: border-box;
+      font-family: Arial, sans-serif; 
+      overflow: hidden; 
+    }
+
+    .menu h1,
+    .menu h2 {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .menu h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: rgb(0, 0, 0);
+    }
+
+    .menu h2 {
+      font-size: 24px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      color: rgb(0, 0, 0);
+    }
+
+    .linea-roja {
+      width: 100%;
+      height: 4px;
+      background-color: rgb(192, 0, 0);
+      margin: 15px 0;
+    }
+
+    .icono {
+      font-size: 60px; 
+      margin: 15px 0;
+      color: rgb(0, 0, 0);
+      font-family: Arial, sans-serif; 
+    }
+
+    .productos {
+      list-style-type: none;
+      padding: 0;
+      margin: 0 auto;
+      max-width: 90%;
+      font-family: Arial, sans-serif;
+    }
+
+    .productos li {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      font-size: 18px;
+      font-family: Arial, sans-serif;
+    }
+
+    .productos li span {
+      font-family: Arial, sans-serif;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 16px;
+      color: rgb(255, 140, 0);
+      margin-top: 8px;
+      padding-top: 8px;
+      font-family: Arial, sans-serif;
+    }
+
+    .direccion {
+      color: black;
+      font-family: Arial, sans-serif;
+    }
+
+    .texto-cursiva {
+      font-style: italic;
+      font-family: Arial, sans-serif;
+    }
+
+    .footer a {
+      color: rgb(255, 140, 0); 
+      text-decoration: none; 
+    }
+
+    .footer a:hover {
+      color: rgb(255, 0, 0); 
+    }
+
+    .footer a:active {
+      color: rgb(255, 255, 255); 
+    }
+
+    .footer a:visited {
+      color: rgb(0, 0, 0); 
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <h1>CampeR SetaS</h1>
+    <p class="texto-cursiva">Nop. 2023</p>
+    <div class="linea-roja"></div>
+
+    <h2>Setas</h2>
+    <img class="icono" src="cafe.png" alt="Café" width="60" height="60"> 
+    <ul class="productos">
+      <li><span>Boletus Vanilla</span> <span>3.00</span></li>
+      <li><span>Boletus 2</span> <span>3.75</span></li>
+      <li><span>Boletus Spice</span> <span>3.50</span></li>
+      <li><span>Boletus 3</span> <span>4.00</span></li>
+      <li><span>Boletus x</span> <span>4.50</span></li>
+    </ul>
+
+    <h2>Postres</h2>
+    <img class="icono" src="tarta.png" alt="Tarta" width="60" height="60"> 
+    <ul class="productos">
+      <li><span>Donut de Boletus</span> <span>1.50</span></li>
+      <li><span>Boletus Pie</span> <span>2.75</span></li>
+      <li><span>Boletus solo</span> <span>3.00</span></li>
+      <li><span>Boletus Roll</span> <span>2.50</span></li>
+    </ul>
+
+    <div class="linea-roja"></div>
+
+    <div class="footer">
+      <p><a href="https://www.windows.com" target="_blank">Visita Nuestra Web</a></p>
+      <p><span class="direccion">123 La Seta Dos</span></p>
+    </div>
+  </div>
+</body>
+</html>
