@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>La Super Carta</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f5f5dc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card-wrapper {
+      padding: 20px 6px; /* Bordes To Chulos */
+      background-color: #203aff; 
+      border-radius: 30px; 
+    }
+
+    .card {
+      /* Tamaño, borde, sombra y diseño en columna */
+      width: 400px;
+      height: 560px;
+      border: 6px solid #203aff;
+      border-radius: 24px;
+      background: white;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #color {
+      background-image: url('fondo.jpg');   /* Imagen de fondo */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .card-header {
+      background: rgba(113, 136, 255, 0.9);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 16px;
+      border-bottom: 3px solid #3f5fff;
+      font-weight: bold;
+      font-size: 1.4em;
+    }
+
+    .card-header h2 {
+      margin: 0;
+    }
+
+    .card-image img {
+      /* Imagen Ronaldo */
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-info {
+      /* Ataque especial y atributo */
+      padding: 12px 16px;
+      font-size: 0.90em;
+      max-height: 80px;
+      overflow: hidden;
+      background: transparent;
+    }
+
+    .card-info p {
+      margin: 8px 0;
+    }
+
+    .card-footer {
+      padding: 10px 16px;
+      background: transparent;
+      border-top: 2px solid rgba(204, 204, 204, 0.6);
+      font-size: 0.95em;
+      color: #000000;
+    }
+
+    .flavor-text {
+      /* Texto con cursiva */
+      font-style: italic;
+      margin-top: 6px;
+    }
+
+    .collection-info {
+      text-align: right;
+      font-size: 0.85em;
+      color: #000000;
+    }
+
+    #mana {
+      color: gold;
+      font-size: 1.2em;
+    }
+
+    /* Máximo y mínimo de estrellas */
+    .mana-1::before { content: '⭐'; }
+    .mana-2::before { content: '⭐⭐'; }
+    .mana-3::before { content: '⭐⭐⭐'; }
+    .mana-4::before { content: '⭐⭐⭐⭐'; }
+    .mana-5::before { content: '⭐⭐⭐⭐⭐'; }
+    .mana-6::before { content: '⭐⭐⭐⭐⭐⭐'; }
+
+    #nombre {
+      display: inline;
+    }
+
+    #power {
+      display: inline;
+    }
+
+    #toughness::after {
+      content: ' · ';
+    }
+
+    #artist::after {
+      content: ' ';
+    }
+  </style>
+</head>
+<body>
+  <div class="card-wrapper">
+    <div class="card" id="color">
+      <div class="card-header">
+        <h2 id="nombre">RONALDO 🐐</h2>
+        <span class="hp" id="power">7 ⚡</span> <!-- Power -->
+      </div>
+
+      <div class="card-image">
+        <img src="ronaldo.png"> <!-- Imagen Ronaldo-->
+      </div>
+
+      <div class="card-info">
+        <div id="cardtype">
+          <!-- Ataque Especial y Atributo -->
+          <p><strong>Ataque Especial:</strong> Chilena en la Final de la Champions</p>
+          <p><strong>Atributo:</strong> +2</p>
+        </div>
+      </div>
+
+      <div class="card-footer">
+        <p id="mana" class="mana-6"></p> <!-- Muestra estrellas -->
+        <p class="flavor-text" id="cardtext">
+          Es el número uno, es the best, es el balón de oro, y es sin ningún tipo de dudas el mejor jugador del mundo, es el sucesor del mítico Alfredo di Stefano en nuestra historia, es Cristianooooooo Ronaldooooooo SIUUUUUUUUUUUUU.
+        </p>
+
+        <!-- Artista Nombre Real y Número de Cartas -->
+        <p class="collection-info">
+          <span id="toughness">/18</span>
+          <span id="artist">Artista.</span>
+          <span id="bottom">Nombre Real</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
