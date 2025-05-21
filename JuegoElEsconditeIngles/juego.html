@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>El Escondite Inglés Regular</title>
+  <link rel="stylesheet" href="my.css">
+</head>
+<body>
+
+<h1>El Escondite Inglés Regular</h1>
+
+<div id="game">
+  <div class="players-container">
+
+    <div class="player">
+      <div class="player-name">Jugador 1</div>
+      <div class="path" id="path1"></div>
+      <div class="controls">
+        <button onclick="setAction(0, 'walk')">Andar</button>
+        <button onclick="setAction(0, 'stop')">Pararse</button>
+      </div>
+      <div class="heart-indicator" id="heart1">❌</div>
+    </div>
+
+    <div class="player">
+      <div class="player-name">Jugador 2</div>
+      <div class="path" id="path2"></div>
+      <div class="controls">
+        <button onclick="setAction(1, 'walk')">Andar</button>
+        <button onclick="setAction(1, 'stop')">Pararse</button>
+      </div>
+      <div class="heart-indicator" id="heart2">❌</div>
+    </div>
+
+    <div class="player">
+      <div class="player-name">Jugador 3</div>
+      <div class="path" id="path3"></div>
+      <div class="controls">
+        <button onclick="setAction(2, 'walk')">Andar</button>
+        <button onclick="setAction(2, 'stop')">Pararse</button>
+      </div>
+      <div class="heart-indicator" id="heart3">❌</div>
+    </div>
+
+  </div>
+
+  <div id="control-panel">
+    <div id="die-control">
+      <div id="die-display">Dado: 🎲</div>
+      <button id="next-turn-btn" onclick="nextTurn()">Siguiente Turno</button>
+    </div>
+    <div id="log"></div>
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
